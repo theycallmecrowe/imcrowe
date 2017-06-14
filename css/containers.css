@@ -1,0 +1,253 @@
+.ten {
+	position: relative;
+	display: inline-block;
+	width: 9.8%;
+}
+.twenty {
+	position: relative;
+	display: inline-block;
+	width: 19.8%;
+}
+.thirty {
+    transition: all .2s ease-in-out;
+	position: relative;
+	display: inline-block;
+	width: 28%;
+    text-align: center;
+    margin: 0 2% 4% 2%;
+    z-index: 9999;
+}
+
+.forty {
+	position: relative;
+	display: inline-block;
+	width: 40%;
+    text-align: center;
+    margin: 0 2% 4% 2%;
+    z-index: 9999;
+}
+
+.fifty {
+	position: relative;
+	display: inline-block;
+	width: 49.8%;
+    
+}
+
+.sixty {
+	position: relative;
+	display: inline-block;
+	width: 59.8%;
+}
+
+.seventy {
+	display: inline-block;
+	width: 69.8%;
+    margin: 0 auto;
+}
+
+.eighty {
+	position: relative;
+	display: inline-block;
+	width: 79.8%;
+    margin: 4% 2% 4% 2%;
+}
+
+.ninety {
+	position: relative;
+	display: inline-block;
+	width: 89.8%;
+    margin: 0 2% 4% 2%;
+}
+
+.hundred {
+	position: relative;
+	display: block;
+	width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* HOLDERS */
+.header {
+	position: relative;
+	padding: 12% 2% 200px 2%;
+	height: 50%;
+	margin: 0 auto 0 0;
+    color: #434343;
+    z-index: 2222;
+ /*	background: -webkit-linear-gradient(left top, #434343 , #0f0f0d);
+	background: -o-linear-gradient(bottom right, #434343 , #0f0f0d);
+	background: -moz-linear-gradient(bottom right, #434343 , #0f0f0d);
+	background: linear-gradient(to bottom right, #434343 , #0f0f0d); */
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    background-color: #fdfdfd;
+    height: 500px;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.c-one {
+    background-color: #000;
+}
+
+.c-two {
+    background-color: #ddddd3;
+}
+
+.names-home {
+	position: absolute;
+	padding: 50px 0 0 7%;
+	z-index: 22;
+}
+
+.name-title {
+	position: absolute;
+	padding: 50px 0 0 0;
+	z-index: 22;
+	right: 12%;
+}
+
+.numbers {
+	position: relative;
+	background-color: #f9f9f9;
+	padding: 0 0 0 3%;
+}
+
+.sidelock {
+	position: fixed;
+	right:-80px;
+	width: 160px;
+	height: 100%;
+	background-color: rgba(242, 255, 181, 1);
+	z-index: 9999;
+	transition: all .2s ease;
+}
+
+.sidelock:hover {
+	right:-70px;
+}
+
+.toplock {
+	position: absolute;
+	top:-26px;
+	width: 98%;
+	height: 50px;
+	background-color: rgba(242, 255, 181, 0);
+	z-index: 9999;
+	transition: all .2s ease;
+}
+
+.toplock:hover {
+	top:-5px;
+}
+
+.rotate {
+	position: relative;
+	top: 48%;
+	margin-right: 84px;
+	transform: translateY(-50%);
+	-webkit-transform: rotate(-90deg);/* Safari */
+	-moz-transform: rotate(-90deg);/* Firefox */
+	-ms-transform: rotate(-90deg);/* IE */
+	-o-transform: rotate(-90deg);/* Opera */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);/* Internet Explorer */
+}
+
+/* COLOR BARS */
+.border-left {
+	position: fixed;
+	left:0px;
+	width: 15px;
+	height: 100%;
+	background-color: rgba(242, 255, 181, 1);
+	z-index: 9999;
+}
+
+.border-right {
+	position: fixed;
+	right:0px;
+	width: 15px;
+	height: 100%;
+	background-color: rgba(242, 255, 181, 1);
+	z-index: 9999;
+}
+
+.color-one {
+	position: relative;
+	background-color: rgba(74, 74, 49, 0.06);
+	padding: 0 0 0 0;
+	height: 195px;
+	overflow: hidden;
+}
+.color-two {
+	position: relative;
+	background-color: rgba(74, 74, 49,0.1);
+	padding: 0px 0 0 0;
+	height: 195px;
+	overflow: hidden;
+}
+
+.color-three {
+	position: relative;
+	background-color: rgba(75, 75, 49, 0.14);
+	padding: 0px 0 0 0;
+	height: 195px;
+	overflow: hidden;
+}
+
+.color-four {
+	position: relative;
+	background-color: rgba(74, 74, 49,0.20);
+	padding: 0px 0 0 0;
+	height: 195px;
+	overflow: hidden;
+}
+
+.color-five {
+	position: relative;
+	background-color: rgba(74, 74, 49, 0.25);
+	padding: 0px 0 0 0;
+	height: 195px;
+	overflow: hidden;
+}
+
+.color-feature {
+	position: relative;
+	background-color: #c4d8d6;
+	padding: 0px 0 0 0;
+	height: 195px;
+	overflow: hidden;
+}
+
+
+/* ------------------------------- TABLET MEDIA ------------------------------- */
+@media (min-device-width:641px) and (max-width:950px), screen and (max-device-width:641px), (max-device-width: 950px) and (orientation:landscape), (min-device-width:641px) and (max-device-width:950px) and (orientation:portrait) {
+}
+    
+    
+/* ------------------------------- MOBILE MEDIA ------------------------------- */
+@media (min-device-width:480px) and (max-width:640px), screen and (max-device-width:480px), (max-device-width:640px) and (orientation:landscape), (min-device-width:481px) and (max-device-width:640px) and (orientation:portrait) {
+      
+.forty {
+	position: relative;
+	display: inline-block;
+	width: 95%;
+    height: 550px;
+    text-align: center;
+    margin: 0 0 100px 0;
+}      
+
+}
