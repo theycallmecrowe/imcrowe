@@ -62,7 +62,7 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
     margin: 0 auto;
     border-left: 0px #333333 solid;
     color: #fff;
-    text-align:center;
+    text-align:left;
 }
 
 .white-border {
