@@ -1,2 +1,2 @@
-# my-project
-Getting Started
+They Call Me C.Rowe
+Digital Designer & Brand Designer
