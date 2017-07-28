@@ -20,9 +20,9 @@ h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, vid
 .fadeload {
     opacity:0;
     opacity: 1 \9; /*just in case ie*/
-	-webkit-animation: fadein 1s forwards; 
-	-webkit-animation-name: fadein 1s forwards; 
-	-webkit-animation-duration: 1s forwards; 
+	-webkit-animation: fadein 1s ease forwards; 
+	-webkit-animation-name: fadein 1s ease forwards; 
+	-webkit-animation-duration: 1s ease forwards; 
     -webkit-animation-delay: 800ms;
     -moz-animation-delay:800ms;
     animation-delay: 800ms;
@@ -58,17 +58,22 @@ h2 {
 
 
 a {
-    font-family: 'Overpass', sans-serif;
-    font-size: 1.2em;
-    font-weight: 400;
     margin: 0;
-    color: #666;
-    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
+    -o-transition:color .5s ease-in;
+    -ms-transition:color .5s ease-in;
+    -moz-transition:color .5s ease-in;
+    -webkit-transition:color .5s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .5s ease-in;
 }
 
 a:hover {
     text-decoration: line-through;
-    color: #fff;
+    text-decoration-color: #0045ff;
+    text-decoration-style: wavy;
+    color: #666;
 }
 
 img { -ms-interpolation-mode: bicubic; }
@@ -92,6 +97,11 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
     margin-bottom: 15px;
 }
 
+.online {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+}
 .black-border {
     height: 8px;
     width: 20%;
