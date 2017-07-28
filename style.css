@@ -30,8 +30,14 @@ h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, vid
 
 .fadeload.two {
     -webkit-animation-delay: 1.5s;
-    -moz-animation-delay:1.5s;
+    -moz-animation-delay: 1.5s;
     animation-delay: 1.5s;
+}
+
+.fadeload.three {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 /* MEDIA
@@ -46,22 +52,15 @@ h1 {
 }
 
 h2 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3.7em;
-    line-height: 1em;
-    margin: 0;
-}
-
-h3 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.2em;
-    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
 }
 
 
 a {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-size: 1.2em;
+    font-weight: 400;
     margin: 0;
     color: #666;
     text-decoration: none;
