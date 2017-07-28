@@ -60,7 +60,7 @@ h2 {
 a {
     margin: 0;
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
     -o-transition:color .5s ease-in;
     -ms-transition:color .5s ease-in;
     -moz-transition:color .5s ease-in;
