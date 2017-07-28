@@ -73,7 +73,7 @@ a:hover {
     text-decoration: line-through;
     text-decoration-color: #0045ff;
     text-decoration-style: wavy;
-    color: #666;
+    color: #363636;
 }
 
 img { -ms-interpolation-mode: bicubic; }
@@ -100,7 +100,8 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
 .online {
     font-family: 'Overpass', sans-serif;
     font-size: 1.1em;
-    font-weight: 400;
+    font-weight: 500;
+    color: #888888;
 }
 .black-border {
     height: 8px;
