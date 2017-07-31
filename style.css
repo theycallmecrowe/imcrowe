@@ -12,43 +12,68 @@ body { max-width: 100%; margin: 0 auto; padding: 0; }
 article, aside, figure, figcaption, footer, header, main, nav, section { display: block; }
 h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, video { margin-bottom: 1.5em; }
 
+/* FADE-IN */  
+@keyframes fadein { from {opacity:0;} to {opacity:1;}}
+@-moz-keyframes fadein { /* Firefox */ from {opacity:0;} to {opacity:1;}}
+@-webkit-keyframes fadein { /* Safari and Chrome */ from {opacity:0;} to {opacity:1;}}
+@-o-keyframes fadein { /* Opera */ from {opacity:0;} to {opacity: 1;}}
+.fadeload {
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+	-webkit-animation: fadein 1s ease forwards; 
+	-webkit-animation-name: fadein 1s ease forwards; 
+	-webkit-animation-duration: 1s ease forwards; 
+    -webkit-animation-delay: 800ms;
+    -moz-animation-delay:800ms;
+    animation-delay: 800ms;
+}
+
+.fadeload.two {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.fadeload.three {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
 
 /* MEDIA
 ------------------------------------------------------------------------------------------------ */
 
 h1 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 4em;
-    line-height: 1.35em;
+    font-family: 'Overpass', sans-serif;
+    font-size: 3.85em;
+    line-height: 1.3em;
     margin-left: -3px;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 h2 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3.7em;
-    line-height: 1em;
-    margin: 0;
-}
-
-h3 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.2em;
-    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
 }
 
 
 a {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.2em;
     margin: 0;
-    color: #666;
+    color: #fff;
     text-decoration: none;
+    -o-transition:color .5s ease-in;
+    -ms-transition:color .5s ease-in;
+    -moz-transition:color .5s ease-in;
+    -webkit-transition:color .5s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .5s ease-in;
 }
 
 a:hover {
     text-decoration: line-through;
-    color: #fff;
+    text-decoration-color: #0045ff;
+    text-decoration-style: wavy;
+    color: #363636;
 }
 
 img { -ms-interpolation-mode: bicubic; }
@@ -72,6 +97,12 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
     margin-bottom: 15px;
 }
 
+.online {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #888888;
+}
 .black-border {
     height: 8px;
     width: 20%;
@@ -113,11 +144,11 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
 @media only screen and (max-width: 500px) {
     
 h1 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-size: 2.5em;
-    line-height: 1.15em;
+    line-height: 1.2em;
     margin-left: -3px;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 }
