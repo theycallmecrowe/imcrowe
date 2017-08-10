@@ -6,7 +6,7 @@
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, main, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 
-html { background: #000; font-family: 'Work Sans', Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+html { background: #fff; font-family: 'Work Sans', Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
 body { max-width: 100%; margin: 0 auto; padding: 0; }
 
 article, aside, figure, figcaption, footer, header, main, nav, section { display: block; }
@@ -59,7 +59,7 @@ h2 {
 
 a {
     margin: 0;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     -o-transition:color .5s ease-in;
     -ms-transition:color .5s ease-in;
@@ -73,7 +73,7 @@ a:hover {
     text-decoration: line-through;
     text-decoration-color: #0045ff;
     text-decoration-style: wavy;
-    color: #363636;
+    color: #67676c;
 }
 
 img { -ms-interpolation-mode: bicubic; }
@@ -82,11 +82,11 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
 .intro {
     position: relative;
     width: 85%;
-    background-color: #000;
+    background-color: #fff;
     padding: 10% 0 5% 0;
     margin: 0 auto;
     border-left: 0px #333333 solid;
-    color: #fff;
+    color: #000;
     text-align:left;
 }
 
@@ -101,7 +101,7 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
     font-family: 'Overpass', sans-serif;
     font-size: 1.1em;
     font-weight: 500;
-    color: #888888;
+    color: #000;
 }
 .black-border {
     height: 8px;
