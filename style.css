@@ -6,7 +6,7 @@
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, main, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 
-html { background: #fff; font-family: 'Work Sans', Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+html { background: #000; font-family: 'Work Sans', Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
 body { max-width: 100%; margin: 0 auto; padding: 0; }
 
 article, aside, figure, figcaption, footer, header, main, nav, section { display: block; }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, vid
 
 h1 {
     font-family: 'Overpass', sans-serif;
-    font-size: 3.85em;
+    font-size: 3.5em;
     line-height: 1.3em;
     margin-left: -3px;
     font-weight: 900;
@@ -59,7 +59,7 @@ h2 {
 
 a {
     margin: 0;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     -o-transition:color .5s ease-in;
     -ms-transition:color .5s ease-in;
@@ -73,20 +73,55 @@ a:hover {
     text-decoration: line-through;
     text-decoration-color: #0045ff;
     text-decoration-style: wavy;
-    color: #67676c;
+    color: #4c4c4e;
 }
 
-img { -ms-interpolation-mode: bicubic; }
 img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; width: auto\9; /* IE Fix */ height: auto; border: 0; }
+
+img { -ms-interpolation-mode: bicubic; 
+    z-index: 1;
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 100ms ease-in;
+    transform: scale(1);    
+}
+
+img:hover {
+    opacity: .90;
+    box-shadow: 0px 50px 150px rgba(0, 0, 0, 0.0);
+    z-index: 2;
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.008);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.008);   
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.008);
+    transition: all 100ms ease-in;
+    transform: scale(1.008);
+    cursor:url(images/arrow.png), auto;
+}
 
 .intro {
     position: relative;
     width: 85%;
-    background-color: #fff;
     padding: 10% 0 5% 0;
     margin: 0 auto;
     border-left: 0px #333333 solid;
-    color: #000;
+    color: #fff;
+    text-align:left;
+}
+
+.folio {
+    position: relative;
+    width: 87%;
+    padding: 5% 0 5% 0;
+    margin: 0 auto;
+    border-left: 0px #333333 solid;
+    color: #fff;
     text-align:left;
 }
 
@@ -101,7 +136,7 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
     font-family: 'Overpass', sans-serif;
     font-size: 1.1em;
     font-weight: 500;
-    color: #000;
+    color: #fff;
 }
 .black-border {
     height: 8px;
@@ -110,36 +145,51 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
     margin-bottom: 15px;
 }
 
-.work {
-    position: relative;
-    width: 100%;
-    height: 1000px;
-    background-color: #f4f4f4;
-    margin: 0 auto;
-}
-
-.folio-list {
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
-    padding: 10% 0 10% 0;
-}
 
 .item {
     margin: 50px auto 50px auto;
 }
 
 .left {
-    display: block;
-    width: 30%;
     float: left;
+    clear: both;
 }
 
 .right {
-    display: block;
-    width: 70%;
-    float: left;
+    float: right;
 }
+
+.twenty {
+    display: inline-block;
+    width: 20%;
+    padding: 1%;
+}
+
+.thirty {
+    display: inline-block;
+    width: 32%;
+    padding: 1%;
+}
+
+.fifty {
+    display: inline-block;
+    width: 50%;
+    padding: 1%;
+}
+
+.seventy {
+    display: inline-block;
+    width: 68%;
+    padding: 1%;
+}
+
+.full {
+    display: inline-block;
+    width: 100%;
+    padding: 1%;
+}
+
+
 
 @media only screen and (max-width: 500px) {
     
