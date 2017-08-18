@@ -74,6 +74,7 @@ a:hover {
     text-decoration-color: #0045ff;
     text-decoration-style: wavy;
     color: #4c4c4e;
+    cursor:url(http://www.imcrowe.com/images/arrow.png), auto;
 }
 
 img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; width: auto\9; /* IE Fix */ height: auto; border: 0; }
@@ -102,7 +103,6 @@ img:hover {
     -moz-transform: scale(1.008);
     transition: all 100ms ease-in;
     transform: scale(1.008);
-    cursor:url(images/arrow.png), auto;
 }
 
 .intro {
