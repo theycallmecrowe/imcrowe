@@ -6,7 +6,7 @@
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, main, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 
-html { background: #fff; background-image: url('images/'); background-position: center top; background-size: 100% auto; background-repeat: no-repeat; font-family: 'Work Sans', Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+html { background: #F3F3F3; background-image: url('images/'); background-position: center top; background-size: 100% auto; background-repeat: no-repeat; font-family: 'Work Sans', Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
 body { max-width: 100%; margin: 0 auto; padding: 0; }
 
 article, aside, figure, figcaption, footer, header, main, nav, section { display: block; }
@@ -54,6 +54,14 @@ h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, vid
     animation-delay: 2.25s;
 }
 
+.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}    
+
 
 /* MEDIA
 ------------------------------------------------------------------------------------------------ */
@@ -63,26 +71,40 @@ h1 {
     font-size: 3.5em;
     line-height: 1.2em;
     font-weight: 900;
+    margin: 0 0 0px 0;
 }
 
 h2 {
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 1.3em;
+    margin: 0 0 0px 0;
 }
 
 h3 {
     font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 0 0 20px 0;
+}
+
+h4 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 3.5em;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin: -20px 0 100px 0;
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
     font-weight: 500;
-    font-size: 2.2em;
-    line-height: 1.5em;
-    color: #0045ff;
-    margin: 0 0 110px 0;
-    animation: spin 2.5s;
-    -webkit-animation-delay: 200ms;
-    -moz-animation-delay:200ms;
-    animation-delay: 200ms;
+    font-size: .85em;
+    line-height: 1.6em;
+    margin: 0px 0 0px 0;
+    color: #727272;
 }
 
 @keyframes spin {
@@ -90,36 +112,39 @@ h3 {
     0% { transform: rotate(360deg); }
 }
 
+    
 .nav {
-    position: absolute;
+    position: fixed;
+    z-index: 9999;
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
     font-size: .7em;
     line-height: 1.5em;
     color: #0045ff;
-    top: 88px;
-    right: 0;
-    text-transform: uppercase;
-}
-
-.label {
-    position: absolute;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 700;
-    font-size: .7em;
-    color: #0045ff;
     top: 0px;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
     text-transform: uppercase;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
-.link { color: #0045ff;}
+.nav a {
+    color: #0045ff;
+    -o-transition:color .1s ease-in;
+    -ms-transition:color .1s ease-in;
+    -moz-transition:color .1s ease-in;
+    -webkit-transition:color .1s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .1s ease-in;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    text-decoration-color: #0045ff;
+    text-decoration-style: double;
+    color: #000;
+}
+
 
 a {
     margin: 0;
@@ -142,106 +167,15 @@ a:hover {
 
 img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; width: auto\9; /* IE Fix */ height: auto; border: 0; }
 
-.svg {
-    opacity: .2;
-    display: block;
-    width: 20%;
-    height: 150px;
-    padding: 0 3% 0 3%;
-    float: left;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
 
-.intro {
+.content {
     position: relative;
     width: 78%;
-    padding: 70px 0 5% 0;
+    padding: 0px 0 0 0;
     margin: 0 auto;
     border-left: 0px #333333 solid;
     color: #000;
     text-align:left;
-}
-
-.folio {
-    position: relative;
-    width: 100%;
-    padding: 10% 0 10% 0;
-    margin: 0 auto;
-    border-left: 0px #333333 solid;
-    color: #fff;
-    text-align:center;
-    background-color: #000;
-}
-
-.folio img { -ms-interpolation-mode: bicubic; 
-    z-index: 1;
-    opacity: .90;
-    -webkit-transition: all 100ms ease-in;
-    -webkit-transform: scale(1.008); 
-    -ms-transition: all 100ms ease-in;
-    -ms-transform: scale(1.008); 
-    -moz-transition: all 100ms ease-in;
-    -moz-transform: scale(1.008);
-    transition: all 100ms ease-in;
-    transform: scale(1.008);    
-}
-
-.folio img:hover {
-    opacity: .9;
-    box-shadow: 0px 50px 150px rgba(0, 0, 0, 0.0);
-    z-index: 2;
-    -webkit-transition: all 100ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transition: all 100ms ease-in;
-    -ms-transform: scale(1);   
-    -moz-transition: all 100ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 100ms ease-in;
-    transform: scale(1);
-}
-
-.logos {
-    position: relative;
-    width: 100%;
-    padding: 10% 0 10% 0;
-    margin: 0 auto;
-    border-left: 0px #333333 solid;
-    color: #fff;
-    text-align:center;
-    background-color: #eaebf0;
-    vertical-align: middle;
-}
-
-.white-border {
-    height: 8px;
-    width: 20%;
-    background-color: #fff;
-    margin-bottom: 15px;
-}
-
-.online {
-    font-family: 'Overpass', sans-serif;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding: 100px 0 0 0;
-}
-.black-border {
-    height: 8px;
-    width: 20%;
-    background-color: #000;
-    margin-bottom: 15px;
-}
-
-
-.item {
-    margin: 50px auto 50px auto;
-    fill: #fff;
-}
-
-.padding {
-    padding: 150px;
 }
 
 .left {
@@ -261,19 +195,21 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
 .twenty {
     display: inline-block;
     width: 20%;
-    padding: 1%;
 }
 
 .thirty {
     display: inline-block;
     width: 32%;
-    padding: 1%;
+}
+
+.forty {
+    display: inline-block;
+    width: 40%;
 }
 
 .fifty {
     display: inline-block;
     width: 50%;
-    padding: 1%;
 }
 
 .sixty {
@@ -284,7 +220,7 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
 .seventy {
     display: inline-block;
     width: 68%;
-    padding: 1%;
+    margin: 0 0 40px 0; 
 }
 
 .eighty {
@@ -292,12 +228,49 @@ img, object, embed { display: block; vertical-align: middle; max-width: 100%; wi
     width: 80%;
 }
 
+.line {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #bcbcbc;
+    margin: 70px 0 120px 0;
+}
+
+.header {
+    display: inline-block;
+    width: 100%;
+    padding: 140px 0 120px 0;
+    margin: 0 0 70px 0;
+    background-color: #ED1C24;
+    color: #fff;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.08);
+}
+
 .full {
     display: inline-block;
     width: 100%;
-    padding: 1%;
+    padding: 120px 0 120px 0;
+    margin: 0 0 70px 0;
+    background-color: #d8d8d8;
+    color: #fff;
 }
 
+
+#container {
+    height: 694px;
+    width: 370px;
+    background-color: #F3F3F3;
+    overflow: hidden;
+    position: relative;
+    float: right;
+}
+
+video {
+    padding: 0;
+    margin: 0;
+    width: 380px;    
+    left: -2px;
+    position: absolute;
+}
 
 
 @media only screen and (max-width: 500px) {
