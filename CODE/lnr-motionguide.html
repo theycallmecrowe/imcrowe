@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Microinteractions & Motion Guidelines</title>
+
+<!-- <meta name="description" content="XXXXXXXXXXXXXXXX"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Overpass:100,200,300,400,600,700,800,900" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="nav"></div>
+    <div class="header fadeload">
+        <div class="content">
+            <font color="#fff">
+            <h1>Microinteractions & Motion</h1>
+            <h2>Guidelines and Rules for Lexis Nexis</h2>
+            </font>    
+        </div>
+    </div>
+    <div class="content fadeload two">
+            <div class="seventy">
+                <h3>Why do they matter?</h3>
+                <p>Microinteractions & motion show how an app is organized and what it can do. They provide hints to what user interactions will happen, and responsiveness to user input and interactions. They help guide users between screens and through user flows, and adds character and polish.</p>
+            </div>
+        <div class="seventy">
+                <font color="#000000">
+                    <p><strong>All microinteractions & motion should have the following characteristics:</strong></font><br /><br />
+                • Action and reaction that directly relates the user flow and interaction<br />
+                • An interaction shouldn't keep the user waiting longer than necessary<br />
+                • Clear and simple transitions
+                • 1 or 2 animations happening at once<br />
+                • A consistent speed and length
+        </div>
+        <div class="line"></div>
+        <div class="forty left">
+                <h3>Speeds, Distances, & Curves</h3>
+                <p> Because animation happen in different areas of the interface, covering larger and smaller areas of the screen, speed and duration vary.<br /><br />
+                • Animation duration should be between 100ms–400ms long<br />
+                • Animations spanning a larger area should be 250–400ms long<br />
+                • Smaller animation should be 100-250ms long<br /><br />
+                
+                <font color="#000000"><p><strong>Easing & Natural Easing:</strong></font><br /><br />
+                • Animations should use a natural easing so that the motion doesn't seem mechanical<br />
+                • Use a standard "ease-in-out" curve<br />
+                • CSS – cubic-bezier(0.7,0.01,0.3,1)</p>
+        </div>
+        <div class="fifty right">
+            <div id="container">
+                <video loop autoplay="autoplay">
+                <source id="mp4" src="vids/Speeds-Crop-Test.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="full">
+        <div class="content">
+            <h1>Style & Layout</h1>
+            <h2>Examples of motion with the above rules applied</h2>
+        </div>
+    </div>
+    <div class="content">
+        <div class="forty left">
+                <h3>Stacked Cards - Load In</h3>
+                <p> When a page has multiple cards stacked on top of each other (Dashboard), the animation follows these requirements:<br /><br />
+                • 400ms animation duration<br />
+                • Cards load in from bottom to top<br />
+                • Fade in from 0% to 100%<br /><br />
+        </div>
+        <div class="fifty right">
+            <div id="container">
+                <video loop autoplay="autoplay">
+                <source id="mp4" src="vids/Card-Load-In-Crop.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="content">
+        <div class="forty left">
+                <h3>Card Expansion</h3>
+                <p>Cards can be used to transition into detail pages. This allows for interactions through a userflow to feel smooth and less mechanical. It also limits the amount of wait time and load time. This interaction follows these requirememnts:<br /><br />
+                • 400ms animation duration<br />
+                • On tap the card expands and anchors to a disignated anchor point<br />
+                • Corner radius decreases to 0<br /><br />
+        </div>
+        <div class="fifty right">
+            <div id="container">
+                <video loop autoplay="autoplay">
+                <source id="mp4" src="vids/Expanding-Card-Crop2.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="content">
+        <div class="forty left">
+                <h3>Card Flip</h3>
+                <p>Cards can be used to reveal more content by flipping over. This interaction follows these requirememnts:<br /><br />
+                • 200ms animation duration<br />
+                • Tap to activate card flip<br />
+                <br /><br />
+        </div>
+        <div class="fifty right">
+            <div id="container">
+                <video loop autoplay="autoplay">
+                <source id="mp4" src="vids/Card-Flip-Crop2.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+</body>
+</html>
