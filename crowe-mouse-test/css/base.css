@@ -77,7 +77,6 @@ a:focus {
 
 
 .content {
-	height: 300px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -85,15 +84,28 @@ a:focus {
 	isolation: isolate;
 }
 
+.text {
+   	position: absolute;
+	display: flex;
+	align-items: center;
+    vertical-align: middle;
+	isolation: isolate;
+    z-index: 10000;
+    width: 42%;
+    margin: 0 0 0 100px;
+    height: 90%;
+}
+
 .content__title {
-	font-family: gopherdisplay-black, sans-serif;
-	font-weight: 700;
+	font-family: sans-serif;
+	font-weight: 100;
 	position: relative;
 	z-index: 10000;
-	font-size: 14vw;
-    line-height: 0vw;
+	font-size: 3.25vw;
+    line-height: 4vw;
+    letter-spacing: -2px;
     text-align: left;
-    color: #DDDFE0;
+    color: #ffffff;
 	pointer-events: none;
 }
 
@@ -101,16 +113,17 @@ a:focus {
 	max-width: var(--img-maxwidth);
 	position: absolute;
 	top: 25%;
-	left: 40%;
+	justify-content: center;
+	align-items: center;
 	opacity: 0;
 	will-change: transform;
 	filter: var(--filter-img);
 }
 
 .content__img--full {
-	width: 40%;
-	height: 40%;
-	background-size: cover;
+	width: 400px;
+	height: 400px;
+	background-size: contain;
 }
 
 @media screen and (min-width: 53em) {
