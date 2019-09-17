@@ -122,7 +122,7 @@ svg:hover {
 }
 
 .links {
-	font-family: 'Gopher Display', Fallback, sans-serif;
+	font-family: 'Gopher Display', Fallback, serif;
 	font-weight: 300;
 	position: relative;
 	z-index: 10000;
@@ -142,7 +142,7 @@ svg:hover {
 }
 
 .content__title {
-	font-family: 'Gopher Display', Fallback, sans-serif;
+	font-family: 'Gopher Display', Fallback, serif;
 	font-weight: 700;
 	position: relative;
 	z-index: 10000;
@@ -155,7 +155,7 @@ svg:hover {
 }
 
 .content__title__small {
-	font-family: 'Gopher Display', Fallback, sans-serif;
+	font-family: 'Gopher Display', Fallback, serif;
 	font-weight: 300;
 	position: relative;
     margin-bottom: -20px;
@@ -168,7 +168,7 @@ svg:hover {
 }
 
 .content__title__medium {
-	font-family: 'Gopher Display', Fallback, sans-serif;
+	font-family: 'Gopher Display', Fallback, serif;
 	font-weight: 200;
 	position: relative;
 	z-index: 10000;
