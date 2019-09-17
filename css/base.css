@@ -4,11 +4,11 @@ html, body {
 
 @font-face {
     font-family: 'Gopher';
-    src: url('fonts/GopherDisplay-Black.eot');
-    src: url('fonts/GopherDisplay-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/GopherDisplay-Black.woff2') format('woff2'),
-        url('fonts/GopherDisplay-Black.woff') format('woff'),
-        url('fonts/GopherDisplay-Black.ttf') format('truetype');
+    src: url('../fonts/GopherDisplay-Black.eot');
+    src: url('../fonts/GopherDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GopherDisplay-Black.woff2') format('woff2'),
+        url('../fonts/GopherDisplay-Black.woff') format('woff'),
+        url('../fonts/GopherDisplay-Black.ttf') format('truetype');
     font-weight: 300, 900;
     font-style: normal;
 }
